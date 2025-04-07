@@ -1,8 +1,7 @@
-package repository;
+package weather.repository;
 
-import model.Event;
+import weather.model.Event;
 
-import java.time.Instant;
 import java.util.HashMap;
 import java.util.Map;
 
