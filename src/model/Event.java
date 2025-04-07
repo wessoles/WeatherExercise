@@ -9,6 +9,7 @@ public class Event {
     private Double longitude;
     private Instant startTime;
     private Instant endTime;
+    private int id;
 
     public boolean hasLocation() {
         return latitude != null && longitude != null;
