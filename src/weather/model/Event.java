@@ -20,5 +20,13 @@ public class Event {
         return !startTime.isBefore(now) && startTime.isBefore(now.plus(7, ChronoUnit.DAYS));
     }
 
+    public String getCacheKey() {
+        return id + ":" + startTime.toString();
+    }
+
     public String getId() { return id; }
+    public Instant getStartTime() { return startTime; }
+    public Instant getEndTime() { return endTime; }
+    public Double getLatitude() { return latitude; }
+    public Double getLongitude() { return longitude; }
 }
