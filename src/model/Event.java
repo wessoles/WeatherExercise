@@ -9,7 +9,7 @@ public class Event {
     private Double longitude;
     private Instant startTime;
     private Instant endTime;
-    private int id;
+    private String id;
 
     public boolean hasLocation() {
         return latitude != null && longitude != null;
@@ -19,4 +19,6 @@ public class Event {
         Instant now = Instant.now();
         return !startTime.isBefore(now) && startTime.isBefore(now.plus(7, ChronoUnit.DAYS));
     }
+
+    public String getId() { return id; }
 }
